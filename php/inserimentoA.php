@@ -25,14 +25,12 @@
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
-
-
     //close the connection
     $conn->close();
 
 ?>
     <br>
-    <form action="form.html">
+    <form action="../form_insert_update_delete/form.html">
         <button type="submit">FORM</button>
     </form>
 

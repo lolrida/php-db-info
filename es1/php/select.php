@@ -1,6 +1,7 @@
-<?php 
+<?php
 
-include 'connection.php';
+global $conn;
+include '../../php/connection.php';
 $tabella = $_POST["tabella"];
 
 $sql = "SELECT * FROM $tabella";
@@ -26,8 +27,6 @@ if ($result->num_rows > 0) {
 } else {
     echo "Nessun risultato trovato nella tabella 'attori'.";
 }
-echo "<br><br><br>";
-echo "<a href='./form.html'>Ritorna alla home</a>";
-
+$conn->close();
 
 
