@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+<table>
+    <?php
+
+    include '../php/connection.html';
+
+    $sql = "SELECT "
+
+
+
+    ?>
+</table>
+    
 
 </body>
 </html>
